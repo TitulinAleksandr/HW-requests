@@ -15,7 +15,7 @@ class YandexDisk:
         headers = self.get_headers()
         params = {'fields': 'name'}
         response = requests.get(url, headers=headers, params=params)
-        pprint(response.json())
+        return response.json()
     
     def _get_upload_link(self, disk_file_path):
         upload_url = f'{self.host}/v1/disk/resources/upload'

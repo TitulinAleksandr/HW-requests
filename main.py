@@ -1,5 +1,5 @@
-# import requests
-# from pprint import pprint
+import requests
+from pprint import pprint
 
 url = 'https://akabab.github.io/superhero-api/api/all.json'
 response = requests.get(url)
@@ -22,5 +22,5 @@ if __name__ == '__main__':
     yadisk._get_upload_link(disk_file_path)
     yadisk.upload_file_to_disk('/new/text.txt', 'text.txt')
     
-    
+ 
     
